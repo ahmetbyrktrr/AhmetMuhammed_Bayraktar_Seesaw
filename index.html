@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEESAW ⚖️</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="stats">
+        <div class="stat-box">
+          <div class="label">LEFT WEIGHT</div>
+          <div class="value" id="leftWeight">0.0 kg</div>
+        </div>
+
+        <div class="stat-box">
+          <div class="label">NEXT WEIGHT</div>
+          <div class="value" id="nextWeight">0 kg</div>
+        </div>
+
+        <div class="stat-box">
+          <div class="label">RIGHT WEIGHT</div>
+          <div class="value" id="rightWeight">0.0 kg</div>
+        </div>
+
+        <div class="stat-box">
+          <div class="label">TILT ANGLE</div>
+          <div class="value" id="angle">0.0°</div>
+        </div>
+      </div>
+
+      <div class="seesaw-container">
+        <div class="plank"></div>
+        <div class="seesaw-clickable"></div>
+        <div class="pivot"></div>
+        <div id="ghostObject" class="preview-object">
+          <span id="ghostLabel">weight</span>
+        </div>
+        <div class="preview-line"></div>
+        <div class="ground"></div>
+      </div>
+      <div class="controls">
+        <button class="reset-btn">🔄 Reset Balance</button>
+      </div>
+      <div class="logs"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
